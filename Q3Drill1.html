@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Drill 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/1200x/72/0f/75/720f75d0b4216117cc0a079df9a9706b.jpg)
+    }
+
+    .smallbox{
+        background-color:rgb(255, 207, 243);
+        width:800px;
+        height:auto;
+        margin:auto;
+        border: 2px solid rgb(255, 122, 158);
+        
+    }
+
+    h6{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        width:500px;
+        margin:auto;
+    }
+
+    h3{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h4{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color:rgb(0, 0, 0);
+    }
+
+    
+</style>
+
+<body>
+
+<div>
+    <div class="container-fluid bg-danger">
+        <h3 class="text-center text-light" id="head3"></h3>
+    </div>
+    <br>
+   <!--small box-->
+        <div class="smallbox text-center">
+            <br><br>
+        <h4 class="text-center">What are the two numbers?</h4>
+            <br>
+        <h6 class="text-center text-dark">Click the compute button to see the sum, difference, product, and quotient of the two variables.</h6>
+
+        <br><br>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('result.1').innerHTML = sum + '          '+ diff + '      ' + product + '    ' + quotient">Result</button>
+        <!--
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('result.2').innerHTML = diff;">Subtract</button>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('result.3').innerHTML = product;">Multiply</button>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('result.1').innerHTML = difference;">Divide</button>
+        -->
+        <br><br>
+        <p id="result.1"></p>
+     
+
+
+
+    <!--small box-->
+
+     <script>
+            var head ="Basic Calculator";
+
+            var x =100; //
+            var y =12;
+            var sum = x+y;
+            var diff = x-y;
+            var product = x * y;
+            var quotient = x / y;
+
+            document.getElementById('head3').innerHTML = head;
+
+
+
+    </script>
+    </div>
+
+</div>
+    
+</body>
+
+
+</html>
